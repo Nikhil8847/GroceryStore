@@ -1,0 +1,137 @@
+/* You can add global styles to this file, and also import other style files */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+.search-input {
+  height: 40px;
+  outline: 0;
+}
+
+.search-input:focus,
+.review-input:focus {
+  outline: 3px solid rgb(96, 159, 230);
+  border: 0;
+}
+
+.text-primary-blue {
+  color: rgb(107, 128, 197);
+}
+
+div.navbar-container {
+  background: rgb(75, 95, 160);
+}
+div.navbar-container a {
+  color: white;
+}
+
+.primary-blue {
+  background: rgb(57, 83, 168);
+}
+
+button.primary-blue {
+  color: white;
+}
+
+button.primary-blue:hover {
+  background: rgba(22, 51, 114, 0.911);
+  color: white;
+}
+
+.active-category {
+  background: rgb(207, 217, 252);
+}
+
+.unactive-category {
+  background: rgb(241, 237, 237);
+}
+
+.border-blue-2 {
+  border: 2px solid rgb(87, 106, 172);
+}
+
+.required-field-asterisk {
+  color: red;
+}
+
+input[type="checkbox"]:checked {
+  accent-color: rgb(57, 83, 168) !important;
+}
+
+button.primary-blue:disabled,
+button.primary-blue[disabled] {
+  background-color: rgba(36, 73, 151, 0.793);
+  color: white;
+  border: 0;
+}
+
+button.border-blue-2:hover {
+  background-color: rgba(22, 51, 114, 0.911);
+  color: white;
+}
+
+th {
+  background: rgb(57, 83, 168) !important;
+  color: white !important;
+}
+
+.secondary-orange {
+  background-color: rgb(236, 146, 2);
+}
+button.secondary-orange {
+  color: white;
+}
+button.secondary-orange:hover {
+  background-color: rgb(219, 136, 2);
+  color: white;
+}
+
+.review-input {
+  outline: 0;
+}
+
+.date-picker:hover,
+.date-picker:focus,
+.date-picker:focus-visible {
+  border: 3px solid rgb(57, 83, 168) !important;
+}
+
+.navbar-nav .nav-link.active {
+  color: white;
+  border-bottom: 2px solid black;
+  animation: border-bottom-width 0.3s forwards;
+}
+@media (max-width: 768px) {
+  .navbar-nav .nav-link.active {
+    width: 20%;
+  }
+  .navbar-nav .nav-item {
+    position: static !important;
+  }
+}
+.navbar-nav .nav-link.active:click {
+  border-bottom-width: 100%;
+}
+
+.product-count-input {
+  border: 2px solid #ced4da;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.product-count-input:focus {
+  outline: none;
+  border-color: #80bdff;
+  box-shadow: 0 2px 4px rgba(0, 123, 255, 0.25);
+}
